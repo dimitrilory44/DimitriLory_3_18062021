@@ -1,0 +1,19 @@
+{
+  "name": "dimitrilory_3_18062021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimitrilory44/DimitriLory_3_18062021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimitrilory44/DimitriLory_3_18062021/issues"
+  },
+  "homepage": "https://github.com/dimitrilory44/DimitriLory_3_18062021#readme"
+}
