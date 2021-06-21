@@ -1,15 +1,71 @@
-/* GENERAL */
 body, html {
-  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
   overflow-x: hidden;
 }
 
-/* Header */
-.header__logo {
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body, html {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, span, p {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+}
+header .header__logo {
   font-family: "Shrikhand", sans-serif;
+}
+
+main #localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  padding: 20px;
+}
+main #localisation__icone {
+  padding-right: 15px;
+}
+main #localisation__descriptif {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+main #decouvrer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f6f6f6;
+}
+main #decouvrer__titre {
+  text-align: center;
+}
+main #decouvrer__soustitre {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+main #decouvrer__button {
+  background-color: #FF79DA;
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 15px;
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

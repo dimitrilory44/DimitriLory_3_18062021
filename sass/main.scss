@@ -1,17 +1,5 @@
-@import './utils/variables';
+@import './utils/variables', './utils/mixins';
+@import './base/base', './base/typography';
+@import './layout/header';
 
-/* GENERAL */
-
-body, html {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-}
-
-/* Header */
-
-.header__logo {
-    font-family: 'Shrikhand', sans-serif;
-}
+@import './pages/accueil';
