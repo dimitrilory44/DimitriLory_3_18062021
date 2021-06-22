@@ -1,42 +1,105 @@
-main {
-    #localisation {
-        @include centrage;
-        background-color: #eaeaea;
-        padding: 20px;
+#localisation {
+    @include centrage;
+    background-color: #eaeaea;
+    padding: 20px;
             
-        &__icone {
-            padding-right: 15px;
-        }
-
-        &__descriptif {
-            font-size: 20px;
-            font-weight: bold;
-            text-align: center;
-        }
+    &__icone {
+        padding-right: 15px;
     }
 
-    #decouvrer {
+    &__descriptif {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+#decouvrer {
+    @include centrage;
+    flex-direction: column;
+    background-color: #f6f6f6;
+
+    &__titre {
+        text-align: center;
+    }
+
+    &__soustitre {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+#fonctionnement {
+    margin-left: 20px;
+    margin-bottom: 50px;
+
+    .card-list {
         @include centrage;
-        flex-direction: column;
-        background-color: #f6f6f6;
+        flex-wrap: wrap;
 
-        &__titre {
-            text-align: center;
+        .habillage {
+            width: 20px;
+            height: 20px;
+            background-color: $couleur-primaire;
+            border-radius: 50%;
+            position: absolute;
+            margin-top: 25px;
+            margin-right: 10px;
         }
 
-        &__soustitre {
-            font-size: 18px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        &__button {
-            background-color: $couleur-secondaire;
-            background: linear-gradient($couleur-secondaire, $couleur-primaire);
-            padding: 15px;
-            border-radius: 20px;
+        .numerotation {
             color: white;
-            margin-bottom: 50px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .fonctionnement__icone {
+            margin-left: 10px;
+            padding: 30px;
+            color: grey;
         }
     }
+}
+
+#restaurants {
+    padding-left: 20px;
+    padding-top: 50px;
+    background-color: #eaeaea;
+
+    .card-list-menu {
+        @include centrage;
+        flex-wrap: wrap;
+
+        .card-img {
+            display: block;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 70%;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .card-body {
+            width: 92%;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+
+            .description {
+                display: flex;
+                flex-direction: column;
+                margin-left: 20px;
+                margin-top: -10px;
+            }
+            .icone {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    } 
 }

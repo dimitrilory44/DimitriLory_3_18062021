@@ -1,0 +1,17 @@
+#cards_fonctionnement {
+    @include card;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#cards_menu {
+    @include card_menu;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#cards_menu:hover {
+    transform:scale(1.05);
+}

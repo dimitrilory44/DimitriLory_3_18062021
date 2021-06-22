@@ -1,0 +1,44 @@
+footer {
+    width: 100%;
+    height: 100%;
+    background-color: #353535;
+
+    #footer-content {
+        padding: 1rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+
+        .footer__logo {
+            font-family: 'Shrikhand', sans-serif;
+            font-size: 20px;
+        }
+
+        .proposition {
+            margin-top: 20px;
+            display: flex;
+
+            .footer__icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+            }
+        }
+
+        .proprietaire {
+            display: flex;
+
+            .footer__icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+            }
+        }
+
+        .mention {
+            margin-bottom: 15px;
+        }
+    }
+}

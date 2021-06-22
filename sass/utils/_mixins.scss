@@ -3,3 +3,28 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin card {
+   background-color: #f6f6f6;
+   box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+   height: 70px;
+   flex: 1;
+   border-radius: 1.25rem;
+}
+
+@mixin card_menu {
+   background-color: white;
+   box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+   height: 400px;
+   width: 46%;
+   border-radius: 1.25rem;
+}
+
+@mixin bouton_reserver {
+    background-color: $couleur-secondaire;
+    background: linear-gradient($couleur-secondaire, $couleur-primaire);
+    padding: 15px;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 50px;
+}
