@@ -20,6 +20,14 @@
    border-radius: 1.25rem;
 }
 
+@mixin card_choix {
+    background-color: white;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+    height: 80px;
+    width: 100%;
+    border-radius: 1.25rem;
+ }
+
 @mixin bouton_reserver {
     background-color: $couleur-secondaire;
     background: linear-gradient($couleur-secondaire, $couleur-primaire);

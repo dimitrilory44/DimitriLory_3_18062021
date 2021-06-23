@@ -1,6 +1,6 @@
 @import './utils/variables', './utils/mixins';
 @import './base/base', './base/typography';
 @import './components/cards', './components/buttons';
-@import './layout/header', './layout/footer';
+@import './layout/header', './layout/container', './layout/footer';
 
-@import './pages/accueil';
+@import './pages/accueil', './pages/menu';

@@ -34,34 +34,26 @@
     margin-left: 20px;
     margin-bottom: 50px;
 
-    .card-list {
+    .habillage {
+        width: 20px;
+        height: 20px;
+        background-color: $couleur-primaire;
+        border-radius: 50%;
+        position: absolute;
+        margin-top: 25px;
+        margin-right: 10px;
+    }
+
+    .numerotation {
         @include centrage;
-        flex-wrap: wrap;
+        color: white;
+        position: relative;
+    }
 
-        .habillage {
-            width: 20px;
-            height: 20px;
-            background-color: $couleur-primaire;
-            border-radius: 50%;
-            position: absolute;
-            margin-top: 25px;
-            margin-right: 10px;
-        }
-
-        .numerotation {
-            color: white;
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-
-        .fonctionnement__icone {
-            margin-left: 10px;
-            padding: 30px;
-            color: grey;
-        }
+    .fonctionnement__icone {
+        margin-left: 10px;
+        padding: 30px;
+        color: grey;
     }
 }
 
@@ -69,37 +61,4 @@
     padding-left: 20px;
     padding-top: 50px;
     background-color: #eaeaea;
-
-    .card-list-menu {
-        @include centrage;
-        flex-wrap: wrap;
-
-        .card-img {
-            display: block;
-            object-fit: cover;
-            object-position: center;
-            width: 100%;
-            height: 70%;
-            border-radius: 20px 20px 0 0;
-        }
-
-        .card-body {
-            width: 92%;
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-
-            .description {
-                display: flex;
-                flex-direction: column;
-                margin-left: 20px;
-                margin-top: -10px;
-            }
-            .icone {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-    } 
 }
