@@ -4,35 +4,48 @@
     align-items: center;
 }
 
-@mixin card {
-   background-color: #f6f6f6;
-   box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
-   height: 70px;
-   flex: 1;
-   border-radius: 1.25rem;
-}
-
-@mixin card_menu {
-   background-color: white;
-   box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
-   height: 400px;
-   width: 46%;
-   border-radius: 1.25rem;
-}
-
-@mixin card_choix {
-    background-color: white;
+@mixin card($background-color, $height, $width) {
+    background-color: $background-color;
     box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
-    height: 80px;
-    width: 100%;
+    height: $height;
+    width: $width;
     border-radius: 1.25rem;
- }
+}
 
-@mixin bouton_reserver {
+@mixin img($height, $width, $border) {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    height: $height;
+    width: $width;
+    border-radius: $border;
+}
+
+@mixin bouton {
     background-color: $couleur-secondaire;
     background: linear-gradient($couleur-secondaire, $couleur-primaire);
     padding: 15px;
     border-radius: 20px;
     color: white;
     margin-bottom: 50px;
+}
+
+// media query
+
+@mixin mobile-only {
+    @media screen and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+}
+
+@mixin tablet-only {
+    @media screen and (max-width: map-get($breakpoints, tablette)){
+        @content;
+    }
+}
+
+@mixin deskstop-only {
+    @media screen and (max-width: map-get($breakpoints, deskstop)){
+        @content;
+    }
 }

@@ -2,3 +2,10 @@
 $couleur-primaire: #9356DC;
 $couleur-secondaire: #FF79DA;
 $couleur-tertiaire: #99E2D0;
+
+// Breakpoints pour responsive
+$breakpoints: (
+    mobile: 767px,
+    tablette: 1023px,
+    deskstop: 1200px
+);
