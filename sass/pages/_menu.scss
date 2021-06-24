@@ -16,6 +16,11 @@
 
         .menu__icone {
             @include centrage;
+            cursor: pointer;
+
+            &:hover {
+                @include fill-heart;
+            }
         }
     }
 

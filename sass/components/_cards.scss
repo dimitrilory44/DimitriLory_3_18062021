@@ -2,9 +2,25 @@
     @include card(#f6f6f6, 70px, 31.2%);
     margin-right: 20px;
     margin-bottom: 20px;
+    position: relative;
 
     span {
         font-weight: bold;
+    }
+
+    &:hover {
+        color: #9356DC;
+        border-top: 2.5px solid #9356DC;
+        border-right: 2.5px solid #9356DC;
+        border-bottom: 2.5px solid #9356DC;
+        background-color: #f2eafb;
+        transition: all 450ms;
+        cursor: pointer;
+
+        .fonctionnement__icone {
+            color: #9356DC;
+            transition: all 300ms;
+        }
     }
 
     @include tablet-only{
@@ -96,7 +112,11 @@
             @include centrage;
 
             font-size: 30px;
-            
+
+            &:hover {
+                @include fill-heart;
+            }
+        
             @include mobile-only{
                 font-size: 25px;
                 padding-right: 10px;

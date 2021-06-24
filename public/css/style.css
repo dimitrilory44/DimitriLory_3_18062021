@@ -56,9 +56,23 @@ h1, span, p {
   border-radius: 1.25rem;
   margin-right: 20px;
   margin-bottom: 20px;
+  position: relative;
 }
 #cards_fonctionnement span {
   font-weight: bold;
+}
+#cards_fonctionnement:hover {
+  color: #9356DC;
+  border-top: 2.5px solid #9356DC;
+  border-right: 2.5px solid #9356DC;
+  border-bottom: 2.5px solid #9356DC;
+  background-color: #f2eafb;
+  transition: all 450ms;
+  cursor: pointer;
+}
+#cards_fonctionnement:hover .fonctionnement__icone {
+  color: #9356DC;
+  transition: all 300ms;
 }
 @media screen and (max-width: 1023px) {
   #cards_fonctionnement {
@@ -164,6 +178,13 @@ h1, span, p {
   align-items: center;
   font-size: 30px;
 }
+#cards_menu .card-body .icone:hover {
+  animation: fill 0.3s ease-in-out;
+  background: linear-gradient(to left, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
 @media screen and (max-width: 767px) {
   #cards_menu .card-body .icone {
     font-size: 25px;
@@ -193,10 +214,26 @@ h1, span, p {
 #button {
   background-color: #FF79DA;
   background: linear-gradient(#FF79DA, #9356DC);
-  padding: 15px;
+  padding: 20px;
   border-radius: 20px;
   color: white;
   margin-bottom: 50px;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  cursor: pointer;
+}
+#button:hover {
+  animation: animate-button 1000ms;
+}
+@keyframes animate-button {
+  0% {
+    opacity: 1;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    opacity: 0.8;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  }
 }
 
 header {
@@ -311,6 +348,7 @@ footer #footer-content .mention {
   position: absolute;
   margin-top: 25px;
   margin-right: 10px;
+  left: -10px;
 }
 #fonctionnement .numerotation {
   display: flex;
@@ -363,6 +401,14 @@ footer #footer-content .mention {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+#menu__header .menu__icone:hover {
+  animation: fill 0.3s ease-in-out;
+  background: linear-gradient(to left, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 #menu__body {
   display: flex;
