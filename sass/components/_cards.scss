@@ -9,6 +9,7 @@
 
     @include tablet-only{
         width: 100%;
+        margin-right: 0;
 
         span {
             font-weight: bold;
