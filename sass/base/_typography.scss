@@ -12,6 +12,14 @@ h1, span, p {
 
 .menu__title {
     font-family: 'Shrikhand', sans-serif;
+
+    @include tablet-only{
+        font-size: 28px;
+    }
+
+    @include mobile-only{
+        font-size: 25px;
+    }
 }
 
 .description__subtitle {

@@ -25,6 +25,16 @@ h1, span, p {
 .menu__title {
   font-family: "Shrikhand", sans-serif;
 }
+@media screen and (max-width: 1023px) {
+  .menu__title {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu__title {
+    font-size: 25px;
+  }
+}
 
 .description__subtitle {
   font-family: "Roboto", sans-serif;
@@ -215,6 +225,12 @@ header .header__arrow {
     margin-right: 5%;
   }
 }
+@media screen and (max-width: 767px) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 footer {
   width: 100%;
@@ -284,7 +300,6 @@ footer #footer-content .mention {
 }
 
 #fonctionnement {
-  margin-left: 20px;
   margin-bottom: 50px;
 }
 #fonctionnement .habillage {
@@ -355,10 +370,21 @@ footer #footer-content .mention {
   padding-left: 20px;
   padding-right: 20px;
 }
+@media screen and (max-width: 1023px) {
+  #menu__body {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #menu__body .description {
   display: flex;
   flex-direction: column;
   width: 30%;
+}
+@media screen and (max-width: 1023px) {
+  #menu__body .description {
+    width: 100%;
+  }
 }
 #menu__body .description__decoration {
   padding-bottom: 8px;
