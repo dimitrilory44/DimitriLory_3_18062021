@@ -13,15 +13,6 @@
         display: flex;
         justify-content: space-between;
         padding-right: 20px;
-
-        .menu__icone {
-            @include centrage;
-            cursor: pointer;
-
-            &:hover {
-                @include fill-heart;
-            }
-        }
     }
 
     &__body {
@@ -50,20 +41,6 @@
 
         }
 
-        .choix {
-            margin-left: 20px;
-            margin-bottom: 20px;
-
-            h4 {
-                margin-bottom: 0;
-            }
-
-        }
-
-        .prix {
-            margin-right: 15px;
-            font-weight: bold;
-        }
     }
 
     #commander {

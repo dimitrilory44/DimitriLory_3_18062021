@@ -1,0 +1,21 @@
+.icone__fonctionnement {
+    margin-left: 10px;
+    padding: 30px;
+    color: grey;
+}
+
+.icone__favoris {
+    cursor: pointer;
+    font-size: 30px;
+    padding-top: 0.7em;
+    padding-right: 10px;
+
+    &:hover {
+        @include fill-heart;
+    }
+
+    @include mobile-only{
+        font-size: 25px;
+        padding-right: 10px;
+    }
+}

@@ -1,4 +1,4 @@
-#cards_fonctionnement {
+.cards_fonctionnement {
     @include card(#f6f6f6, 70px, 31.2%);
     margin-right: 20px;
     margin-bottom: 20px;
@@ -8,17 +8,13 @@
         font-weight: bold;
     }
 
-    &:hover {
-        color: #9356DC;
-        border-top: 2.5px solid #9356DC;
-        border-right: 2.5px solid #9356DC;
-        border-bottom: 2.5px solid #9356DC;
+    &:hover {       
         background-color: #f2eafb;
         transition: all 450ms;
         cursor: pointer;
 
         .fonctionnement__icone {
-            color: #9356DC;
+            color: $couleur-primaire;
             transition: all 300ms;
         }
     }
@@ -44,7 +40,7 @@
     }
 }
 
-#cards_menu {
+.cards_menu {
     @include card(white, 400px, 44.5%);
     margin-right: 5%;
     margin-bottom: 50px;
@@ -108,20 +104,6 @@
 
             }
         }
-        .icone {
-            @include centrage;
-
-            font-size: 30px;
-
-            &:hover {
-                @include fill-heart;
-            }
-        
-            @include mobile-only{
-                font-size: 25px;
-                padding-right: 10px;
-            }
-        }
         
     }
 
@@ -131,13 +113,109 @@
 
 }
 
-#cards {
+.delay--0 {
+    animation-delay: .2s!important;
+}
+
+.delay--1 {
+    animation-delay: .5s!important;
+}
+
+.delay--2 {
+    animation-delay: .8s!important;
+}
+
+.delay--3 {
+    animation-delay: 1s!important;
+}
+
+.cards {
     @include card(white, 80px, 100%);
     margin-right: 50px;
     margin-bottom: 20px;
     @include centrage;
     justify-content: space-between;
+    animation: fadein 1s both;
 
-   
-    
+    .choix {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: 300px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        h4 {
+            margin-bottom: 0;
+        }
+
+        @include mobile-only{
+            width: 250px!important;
+        }
+
+    }
+
+    .prix {
+        margin-right: 9rem;
+        font-weight: bold;
+
+        @include tablet-only{
+            margin-right: -2rem;
+            margin-left: 3rem;
+        }
+
+        @include mobile-only{
+            margin-right: 3rem;
+            margin-left: -3rem;
+        }
+    }
+
+    &:hover > .choix {
+        @include mobile-only{
+            margin-right: 4rem!important;
+            width: 150px!important;
+        }
+    }
+
+    &:hover > .confirmation{
+        width: 4rem;
+        animation: confirm 0.5s;
+        transform: scaleX(1);
+        margin-left: -7rem;
+
+        @include mobile-only{
+            margin-left: -3rem;
+        }
+
+        i {
+            animation: rotate 0.5s;
+        }
+    }
+
+    .confirmation {
+        @include centrage;
+        background-color: $couleur-tertiaire;
+        height: 100%;
+        width: 0;
+        margin-left: -9rem;
+
+        @include mobile-only{
+            margin-left: -5.6rem;
+        }
+
+        border-radius: 0 1.25rem 1.25rem 0;
+        transform: scaleX(0);
+        transform-origin: right;
+
+        .icon_confirm {
+            @include centrage;
+            border-radius: 1.25rem;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            color: $couleur-tertiaire;
+            position: relative;
+            
+        }
+    }
 }
