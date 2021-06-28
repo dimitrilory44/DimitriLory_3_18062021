@@ -13,9 +13,8 @@
         transition: all 450ms;
         cursor: pointer;
 
-        .fonctionnement__icone {
+        .icone__fonctionnement {
             color: $couleur-primaire;
-            transition: all 300ms;
         }
     }
 
@@ -130,17 +129,19 @@
 }
 
 .cards {
-    @include card(white, 80px, 100%);
+    @include card(white, 70px, 100%);
     margin-right: 50px;
     margin-bottom: 20px;
     @include centrage;
     justify-content: space-between;
     animation: fadein 1s both;
+    position: relative;
 
     .choix {
         margin-left: 20px;
         margin-bottom: 20px;
         width: 300px;
+        font-size: 0.9em;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -149,24 +150,32 @@
             margin-bottom: 0;
         }
 
+        @include tablet-only{
+            font-size: 1em;
+        }
+
         @include mobile-only{
             width: 250px!important;
+            font-size: 1em;
         }
 
     }
 
     .prix {
         margin-right: 9rem;
+        margin-top: 1em;
         font-weight: bold;
 
         @include tablet-only{
-            margin-right: -2rem;
+            margin-right: -3rem;
             margin-left: 3rem;
+            margin-top: 1em;
         }
 
         @include mobile-only{
             margin-right: 3rem;
-            margin-left: -3rem;
+            margin-left: -2rem;
+            margin-top: 1em;
         }
     }
 

@@ -1,3 +1,40 @@
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    border-radius: 5px;
+    background-color: hsla(0,0%,100%,.8);
+    animation: loader .01s 1.75s both;
+    @include centrage;
+    flex-direction: column;
+}
+
+.dot-Pulse {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: $couleur-primaire;;
+    display: inline-block;
+    margin: .3rem;
+    animation: scaling 2.5s ease-in-out infinite;
+}
+
+.dot-Pulse--01 {
+    animation-delay: .2s!important;
+}
+
+.dot-Pulse--02 {
+    animation-delay: .5s!important;
+}
+
+.dot-Pulse--03 {
+    animation-delay: 1s!important;
+}
+
+
 #localisation {
     @include centrage;
     background-color: #eaeaea;

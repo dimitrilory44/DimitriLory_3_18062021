@@ -1,3 +1,24 @@
+@keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes scaling{
+    0%, 100%{
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+    50%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 @keyframes fadein {
     0% {
         transform: translateY(0);

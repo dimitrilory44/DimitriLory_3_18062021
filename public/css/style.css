@@ -1,3 +1,22 @@
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes scaling {
+  0%, 100% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 @keyframes fadein {
   0% {
     transform: translateY(0);
@@ -92,9 +111,8 @@ h1, span, p {
   transition: all 450ms;
   cursor: pointer;
 }
-.cards_fonctionnement:hover .fonctionnement__icone {
+.cards_fonctionnement:hover .icone__fonctionnement {
   color: #9356DC;
-  transition: all 300ms;
 }
 @media screen and (max-width: 1023px) {
   .cards_fonctionnement {
@@ -219,7 +237,7 @@ h1, span, p {
 .cards {
   background-color: white;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
-  height: 80px;
+  height: 70px;
   width: 100%;
   border-radius: 1.25rem;
   margin-right: 50px;
@@ -229,11 +247,13 @@ h1, span, p {
   align-items: center;
   justify-content: space-between;
   animation: fadein 1s both;
+  position: relative;
 }
 .cards .choix {
   margin-left: 20px;
   margin-bottom: 20px;
   width: 300px;
+  font-size: 0.9em;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -241,25 +261,34 @@ h1, span, p {
 .cards .choix h4 {
   margin-bottom: 0;
 }
+@media screen and (max-width: 1023px) {
+  .cards .choix {
+    font-size: 1em;
+  }
+}
 @media screen and (max-width: 767px) {
   .cards .choix {
     width: 250px !important;
+    font-size: 1em;
   }
 }
 .cards .prix {
   margin-right: 9rem;
+  margin-top: 1em;
   font-weight: bold;
 }
 @media screen and (max-width: 1023px) {
   .cards .prix {
-    margin-right: -2rem;
+    margin-right: -3rem;
     margin-left: 3rem;
+    margin-top: 1em;
   }
 }
 @media screen and (max-width: 767px) {
   .cards .prix {
     margin-right: 3rem;
-    margin-left: -3rem;
+    margin-left: -2rem;
+    margin-top: 1em;
   }
 }
 @media screen and (max-width: 767px) {
@@ -430,6 +459,44 @@ footer #footer-content .mention {
   margin-bottom: 15px;
 }
 
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  animation: loader 0.01s 1.75s both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dot-Pulse {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  display: inline-block;
+  margin: 0.3rem;
+  animation: scaling 2.5s ease-in-out infinite;
+}
+
+.dot-Pulse--01 {
+  animation-delay: 0.2s !important;
+}
+
+.dot-Pulse--02 {
+  animation-delay: 0.5s !important;
+}
+
+.dot-Pulse--03 {
+  animation-delay: 1s !important;
+}
+
 #localisation {
   display: flex;
   justify-content: center;
@@ -516,7 +583,7 @@ footer #footer-content .mention {
 #menu__header {
   display: flex;
   justify-content: space-between;
-  padding-right: 20px;
+  padding-right: 8px;
 }
 #menu__body {
   display: flex;
