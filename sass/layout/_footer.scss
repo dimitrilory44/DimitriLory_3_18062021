@@ -3,13 +3,16 @@ footer {
     height: 100%;
     background-color: #353535;
 
-    
-
     #footer-content {
         padding: 1rem;
         color: white;
         display: flex;
         flex-direction: column;
+
+        .footer__couleur {
+            color: white;
+            text-decoration: dashed;
+        }
 
         .proposition {
             margin-top: 20px;
@@ -34,8 +37,9 @@ footer {
             }
         }
 
-        .mention {
-            margin-bottom: 15px;
+        .lien:hover {
+            text-decoration: underline;
+            color: white;
         }
     }
 }

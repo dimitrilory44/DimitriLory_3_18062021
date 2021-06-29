@@ -31,42 +31,42 @@
                 <div class="description">
                     <h2 class="description__subtitle description__decoration">Entrées</h2>
                     <div class="cards delay--0">
-                        <div class="choix">
+                        <div class="cards__description">
                             <h4>Tartare de thon</h4>
                             <span>Assaisonné au yuzu</span>
                         </div>
-                        <div class="prix">
+                        <div class="cards__prix">
                             <span>25€</span>
                         </div>
-                        <div class="confirmation">
+                        <div class="cards__confirmation">
                             <div class="icon_confirm">
                                 <i class="fas fa-check"></i>
                             </div>
                         </div>
                     </div>
                     <div class="cards delay--1">
-                        <div class="choix">
+                        <div class="cards__description">
                             <h4>Bouchée de homard croustillant</h4>
                             <span>Et sa farandole de petits légumes</span>
                         </div>
-                        <div class="prix">
+                        <div class="cards__prix">
                             <span>35€</span>
                         </div>
-                        <div class="confirmation">
+                        <div class="cards__confirmation">
                             <div class="icon_confirm">
                                 <i class="fas fa-check"></i>
                             </div>
                         </div>
                     </div>
                     <div class="cards delay--2">
-                        <div class="choix">
+                        <div class="cards__description">
                             <h4>Velouté de cèpes</h4>
                             <span>Aux truffes</span>
                         </div>
-                        <div class="prix">
+                        <div class="cards__prix">
                             <span>20€</span>
                         </div>
-                        <div class="confirmation">
+                        <div class="cards__confirmation">
                             <div class="icon_confirm">
                                 <i class="fas fa-check"></i>
                             </div>
@@ -76,42 +76,42 @@
                 <div class="description">
                     <h2 class="description__subtitle description__decoration">Plats</h2>
                     <div class="cards delay--0">
-                        <div class="choix">
+                        <div class="cards__description">
                             <h4>Poulet rôti aux herbes de Provence</h4>
                             <span>Et sa crème de truffe</span>
                         </div>
-                        <div class="prix">
+                        <div class="cards__prix">
                             <span>40€</span>
                         </div>
-                        <div class="confirmation">
+                        <div class="cards__confirmation">
                             <div class="icon_confirm">
                                 <i class="fas fa-check"></i>
                             </div>
                         </div>
                     </div>
                     <div class="cards delay--1">
-                        <div class="choix">
+                        <div class="cards__description">
                             <h4>Langouste rôtie</h4>
                             <span>Et ses légumes de saison</span>
                         </div>
-                        <div class="prix">
+                        <div class="cards__prix">
                             <span>35€</span>
                         </div>
-                        <div class="confirmation">
+                        <div class="cards__confirmation">
                             <div class="icon_confirm">
                                 <i class="fas fa-check"></i>
                             </div>
                         </div>
                     </div>
                     <div class="cards delay--2">
-                        <div class="choix">
+                        <div class="cards__description">
                             <h4>Côte de boeuf Angus</h4>
                             <span>Et sa purée de panais</span>
                         </div>
-                        <div class="prix">
+                        <div class="cards__prix">
                             <span>44€</span>
                         </div>
-                        <div class="confirmation">
+                        <div class="cards__confirmation">
                             <div class="icon_confirm">
                                 <i class="fas fa-check"></i>
                             </div>
@@ -121,42 +121,42 @@
                 <div class="description">
                     <h2 class="description__subtitle description__decoration">Desserts</h2>
                     <div class="cards delay--0">
-                        <div class="choix">
+                        <div class="cards__description">
                             <h4>Farandole de desserts</h4>
                             <span>Du chef</span>
                         </div>
-                        <div class="prix">
+                        <div class="cards__prix">
                             <span>18€</span>
                         </div>
-                        <div class="confirmation">
+                        <div class="cards__confirmation">
                             <div class="icon_confirm">
                                 <i class="fas fa-check"></i>
                             </div>
                         </div>
                     </div>
                     <div class="cards delay--1">
-                        <div class="choix">
+                        <div class="cards__description">
                             <h4>Crème brulée</h4>
                             <span>Revisitée</span>
                         </div>
-                        <div class="prix">
+                        <div class="cards__prix">
                             <span>22€</span>
                         </div>
-                        <div class="confirmation">
+                        <div class="cards__confirmation">
                             <div class="icon_confirm">
                                 <i class="fas fa-check"></i>
                             </div>
                         </div>
                     </div>
                     <div class="cards delay--2">
-                        <div class="choix">
+                        <div class="cards__description">
                             <h4>Tiramisu</h4>
                             <span>À la noisette</span>
                         </div>
-                        <div class="prix">
+                        <div class="cards__prix">
                             <span>23€</span>
                         </div>
-                        <div class="confirmation">
+                        <div class="cards__confirmation">
                             <div class="icon_confirm">
                                 <i class="fas fa-check"></i>
                             </div>
@@ -164,7 +164,7 @@
                     </div>
                 </div>
             </div>
-            <div id="commander">
+            <div class="commander">
                 <a id="button">Commander</a>
             </div>
         </div>
@@ -173,17 +173,27 @@
     <!-- Footer -->
     <footer>
         <div id="footer-content" class="container">
-            <span class="footer__logo">ohmyfood</span>
+            <a href="../index.html">
+                <span class="footer__logo footer__couleur">ohmyfood</span>
+            </a>
             <div class="proposition">
                 <i class="fa-utensils fas footer__icon"></i>
-                <span>Proposer un restaurant</span>
+                <a href="" class="lien">
+                    <span class="footer__couleur">Proposer un restaurant</span>
+                </a>
             </div>
             <div class="proprietaire">
                 <i class="fa-hands-helping fas footer__icon"></i>
-                <p>Devenir partenaire</p>
+                <a href="" class="lien">
+                    <p class="footer__couleur">Devenir partenaire</p>
+                </a>
             </div>
-            <span class="mention">Mentions légales</span>
-            <span>Contact</span>
+            <a href="" class="lien">
+                <p class="footer__couleur">Mentions légales</p>
+            </a>
+            <a href="" class="lien">
+                <span class="footer__couleur">Contact</span>
+            </a>
         </div>
     </footer>
 </body>

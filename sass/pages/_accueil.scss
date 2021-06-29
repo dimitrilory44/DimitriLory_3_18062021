@@ -10,39 +10,32 @@
     animation: loader .01s 1.75s both;
     @include centrage;
     flex-direction: column;
-}
 
-.dot-Pulse {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: $couleur-primaire;;
-    display: inline-block;
-    margin: .3rem;
-    animation: scaling 2.5s ease-in-out infinite;
-}
+    .group__Pulse {
+        display: flex;
 
-.dot-Pulse--01 {
-    animation-delay: .2s!important;
-}
+        .dot-Pulse {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: $couleur-primaire;;
+            display: inline-block;
+            margin: .3rem;
+            animation: scaling 2.5s ease-in-out infinite;
+        }
 
-.dot-Pulse--02 {
-    animation-delay: .5s!important;
+        @for $i from 0 to 3 {
+            .delay__Pulse--#{$i} {
+              animation-delay:  #{$i/10}s!important;
+            }
+        }
+    }
 }
-
-.dot-Pulse--03 {
-    animation-delay: 1s!important;
-}
-
 
 #localisation {
     @include centrage;
     background-color: #eaeaea;
     padding: 20px;
-            
-    &__icone {
-        padding-right: 15px;
-    }
 
     &__descriptif {
         font-size: 20px;

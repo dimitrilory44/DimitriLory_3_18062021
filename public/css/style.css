@@ -219,19 +219,15 @@ h1, span, p {
 }
 
 .delay--0 {
-  animation-delay: 0.2s !important;
+  animation-delay: 0s !important;
 }
 
 .delay--1 {
-  animation-delay: 0.5s !important;
+  animation-delay: 0.3333333333s !important;
 }
 
 .delay--2 {
-  animation-delay: 0.8s !important;
-}
-
-.delay--3 {
-  animation-delay: 1s !important;
+  animation-delay: 0.6666666667s !important;
 }
 
 .cards {
@@ -249,7 +245,7 @@ h1, span, p {
   animation: fadein 1s both;
   position: relative;
 }
-.cards .choix {
+.cards__description {
   margin-left: 20px;
   margin-bottom: 20px;
   width: 300px;
@@ -258,60 +254,60 @@ h1, span, p {
   white-space: nowrap;
   overflow: hidden;
 }
-.cards .choix h4 {
+.cards__description h4 {
   margin-bottom: 0;
 }
 @media screen and (max-width: 1023px) {
-  .cards .choix {
+  .cards__description {
     font-size: 1em;
   }
 }
 @media screen and (max-width: 767px) {
-  .cards .choix {
+  .cards__description {
     width: 250px !important;
     font-size: 1em;
   }
 }
-.cards .prix {
+.cards__prix {
   margin-right: 9rem;
   margin-top: 1em;
   font-weight: bold;
 }
 @media screen and (max-width: 1023px) {
-  .cards .prix {
+  .cards__prix {
     margin-right: -3rem;
     margin-left: 3rem;
     margin-top: 1em;
   }
 }
 @media screen and (max-width: 767px) {
-  .cards .prix {
+  .cards__prix {
     margin-right: 3rem;
     margin-left: -2rem;
     margin-top: 1em;
   }
 }
 @media screen and (max-width: 767px) {
-  .cards:hover > .choix {
+  .cards:hover > .cards__description {
     margin-right: 4rem !important;
     width: 150px !important;
   }
 }
-.cards:hover > .confirmation {
+.cards:hover > .cards__confirmation {
   width: 4rem;
   animation: confirm 0.5s;
   transform: scaleX(1);
   margin-left: -7rem;
 }
 @media screen and (max-width: 767px) {
-  .cards:hover > .confirmation {
+  .cards:hover > .cards__confirmation {
     margin-left: -3rem;
   }
 }
-.cards:hover > .confirmation i {
+.cards:hover > .cards__confirmation i {
   animation: rotate 0.5s;
 }
-.cards .confirmation {
+.cards__confirmation {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -324,11 +320,11 @@ h1, span, p {
   transform-origin: right;
 }
 @media screen and (max-width: 767px) {
-  .cards .confirmation {
+  .cards__confirmation {
     margin-left: -5.6rem;
   }
 }
-.cards .confirmation .icon_confirm {
+.cards__confirmation .icon_confirm {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -363,6 +359,10 @@ h1, span, p {
     opacity: 0.8;
     box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
   }
+}
+
+.icone__localisation {
+  padding-right: 15px;
 }
 
 .icone__fonctionnement {
@@ -436,6 +436,10 @@ footer #footer-content {
   display: flex;
   flex-direction: column;
 }
+footer #footer-content .footer__couleur {
+  color: white;
+  text-decoration: dashed;
+}
 footer #footer-content .proposition {
   margin-top: 20px;
   display: flex;
@@ -455,8 +459,9 @@ footer #footer-content .proprietaire .footer__icon {
   align-items: center;
   margin-right: 10px;
 }
-footer #footer-content .mention {
-  margin-bottom: 15px;
+footer #footer-content .lien:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 #loader {
@@ -474,8 +479,10 @@ footer #footer-content .mention {
   align-items: center;
   flex-direction: column;
 }
-
-.dot-Pulse {
+#loader .group__Pulse {
+  display: flex;
+}
+#loader .group__Pulse .dot-Pulse {
   height: 15px;
   width: 15px;
   border-radius: 50%;
@@ -484,17 +491,14 @@ footer #footer-content .mention {
   margin: 0.3rem;
   animation: scaling 2.5s ease-in-out infinite;
 }
-
-.dot-Pulse--01 {
+#loader .group__Pulse .delay__Pulse--0 {
+  animation-delay: 0s !important;
+}
+#loader .group__Pulse .delay__Pulse--1 {
+  animation-delay: 0.1s !important;
+}
+#loader .group__Pulse .delay__Pulse--2 {
   animation-delay: 0.2s !important;
-}
-
-.dot-Pulse--02 {
-  animation-delay: 0.5s !important;
-}
-
-.dot-Pulse--03 {
-  animation-delay: 1s !important;
 }
 
 #localisation {
@@ -503,9 +507,6 @@ footer #footer-content .mention {
   align-items: center;
   background-color: #eaeaea;
   padding: 20px;
-}
-#localisation__icone {
-  padding-right: 15px;
 }
 #localisation__descriptif {
   font-size: 20px;
@@ -610,7 +611,7 @@ footer #footer-content .mention {
   border-bottom: 3px solid #99E2D0;
   width: 50px;
 }
-#menu #commander {
+#menu .commander {
   display: flex;
   justify-content: center;
   align-items: center;

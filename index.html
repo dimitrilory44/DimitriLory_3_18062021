@@ -12,12 +12,12 @@
 <body>
     <!-- Loader -->
     <div id="loader">
-        <img src="public/img/logo/ohmyfood@2x.svg" alt="">
+        <img src="public/img/logo/ohmyfood@2x.svg" alt="logo">
         <br>    
-        <div>
-            <div class="dot-Pulse dot-Pulse--01"></div>
-            <div class="dot-Pulse dot-Pulse--02"></div>
-            <div class="dot-Pulse dot-Pulse--03"></div>
+        <div class="group__Pulse">
+            <div class="dot-Pulse delay__Pulse--1"></div>
+            <div class="dot-Pulse delay__Pulse--2"></div>
+            <div class="dot-Pulse delay__Pulse--3"></div>
         </div>
     </div>
 
@@ -31,7 +31,7 @@
     <main>
         <!-- Section 1 : Localisation -->
         <section id="localisation">
-            <i id="localisation__icone" class="fas fa-map-marker-alt"></i>
+            <i class="fas fa-map-marker-alt icone__localisation"></i>
             <span id="localisation__descriptif">Paris, Belleville</span>
         </section>
 
@@ -137,17 +137,27 @@
     <!-- Footer -->
     <footer>
         <div id="footer-content" class="container">
-            <span class="footer__logo">ohmyfood</span>
+            <a href="../index.html">
+                <span class="footer__logo footer__couleur">ohmyfood</span>
+            </a>
             <div class="proposition">
                 <i class="fa-utensils fas footer__icon"></i>
-                <span>Proposer un restaurant</span>
+                <a href="" class="lien">
+                    <span class="footer__couleur">Proposer un restaurant</span>
+                </a>
             </div>
             <div class="proprietaire">
                 <i class="fa-hands-helping fas footer__icon"></i>
-                <p>Devenir partenaire</p>
+                <a href="" class="lien">
+                    <p class="footer__couleur">Devenir partenaire</p>
+                </a>
             </div>
-            <span class="mention">Mentions légales</span>
-            <span>Contact</span>
+            <a href="" class="lien">
+                <p class="footer__couleur">Mentions légales</p>
+            </a>
+            <a href="" class="lien">
+                <span class="footer__couleur">Contact</span>
+            </a>
         </div>
     </footer>
 

@@ -112,20 +112,10 @@
 
 }
 
-.delay--0 {
-    animation-delay: .2s!important;
-}
-
-.delay--1 {
-    animation-delay: .5s!important;
-}
-
-.delay--2 {
-    animation-delay: .8s!important;
-}
-
-.delay--3 {
-    animation-delay: 1s!important;
+@for $i from 0 to 3 {
+    .delay--#{$i} {
+      animation-delay:  #{$i/3}s!important;
+    }
 }
 
 .cards {
@@ -137,7 +127,7 @@
     animation: fadein 1s both;
     position: relative;
 
-    .choix {
+    &__description {
         margin-left: 20px;
         margin-bottom: 20px;
         width: 300px;
@@ -161,7 +151,7 @@
 
     }
 
-    .prix {
+    &__prix {
         margin-right: 9rem;
         margin-top: 1em;
         font-weight: bold;
@@ -179,14 +169,14 @@
         }
     }
 
-    &:hover > .choix {
+    &:hover > .cards__description {
         @include mobile-only{
             margin-right: 4rem!important;
             width: 150px!important;
         }
     }
 
-    &:hover > .confirmation{
+    &:hover > .cards__confirmation{
         width: 4rem;
         animation: confirm 0.5s;
         transform: scaleX(1);
@@ -201,7 +191,7 @@
         }
     }
 
-    .confirmation {
+    &__confirmation {
         @include centrage;
         background-color: $couleur-tertiaire;
         height: 100%;
