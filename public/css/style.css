@@ -507,6 +507,7 @@ footer #footer-content .lien:hover {
   align-items: center;
   background-color: #eaeaea;
   padding: 20px;
+  height: 20px;
 }
 #localisation__descriptif {
   font-size: 20px;
