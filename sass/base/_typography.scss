@@ -19,6 +19,7 @@ h1, span, p {
 
     @include mobile-only{
         font-size: 25px;
+        margin-top: 10px;
     }
 }
 

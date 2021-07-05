@@ -78,6 +78,7 @@ h1, span, p {
 @media screen and (max-width: 767px) {
   .menu__title {
     font-size: 25px;
+    margin-top: 10px;
   }
 }
 
@@ -230,6 +231,10 @@ h1, span, p {
   animation-delay: 0.6666666667s !important;
 }
 
+.delay--3 {
+  animation-delay: 1s !important;
+}
+
 .cards {
   background-color: white;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
@@ -339,7 +344,7 @@ h1, span, p {
 #button {
   background-color: #FF79DA;
   background: linear-gradient(#FF79DA, #9356DC);
-  padding: 20px;
+  padding: 25px;
   border-radius: 20px;
   color: white;
   margin-bottom: 50px;
