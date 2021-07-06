@@ -5,15 +5,4 @@
     &:hover {
         animation: animate-button 1000ms;
     }
-    
-    @keyframes animate-button {
-        0% {
-            opacity: 1;
-            box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
-        }
-        100% {
-            opacity: 0.8;
-            box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 50%);
-        }
-    }
 }
