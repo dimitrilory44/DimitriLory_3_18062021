@@ -292,6 +292,13 @@ h1, span, p {
     margin-top: 1em;
   }
 }
+@media screen and (max-width: 350px) {
+  .cards__prix {
+    margin-right: 6rem;
+    margin-left: -2rem;
+    margin-top: 1em;
+  }
+}
 @media screen and (max-width: 767px) {
   .cards:hover > .cards__description {
     margin-right: 4rem !important;

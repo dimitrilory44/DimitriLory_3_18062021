@@ -167,6 +167,12 @@
             margin-left: -2rem;
             margin-top: 1em;
         }
+
+        @include small-mobile{
+            margin-right: 6rem;
+            margin-left: -2rem;
+            margin-top: 1em;
+        }
     }
 
     &:hover > .cards__description {
