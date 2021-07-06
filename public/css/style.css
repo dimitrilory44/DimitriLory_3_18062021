@@ -69,7 +69,7 @@ body, html {
   font-family: "Roboto", sans-serif;
 }
 
-h1, span, p {
+h2, span, p {
   font-family: "Roboto", sans-serif;
 }
 
@@ -271,6 +271,9 @@ h1, span, p {
 }
 .cards__description h4 {
   margin-bottom: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 @media screen and (max-width: 1023px) {
   .cards__description {
@@ -298,21 +301,21 @@ h1, span, p {
 @media screen and (max-width: 767px) {
   .cards__prix {
     margin-right: 3rem;
-    margin-left: -2rem;
+    margin-left: -1.2rem;
     margin-top: 1em;
   }
 }
 @media screen and (max-width: 350px) {
   .cards__prix {
-    margin-right: 6rem;
+    margin-right: 5rem;
     margin-left: -2rem;
     margin-top: 1em;
   }
 }
 @media screen and (max-width: 767px) {
   .cards:hover > .cards__description {
-    margin-right: 4rem !important;
-    width: 150px !important;
+    width: 180px !important;
+    margin-right: 0.5rem;
   }
 }
 .cards:hover > .cards__confirmation {
@@ -361,8 +364,10 @@ h1, span, p {
 #button {
   background-color: #FF79DA;
   background: linear-gradient(#FF79DA, #9356DC);
-  padding: 25px;
-  border-radius: 20px;
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 30px;
   color: white;
   margin-bottom: 50px;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);

@@ -138,6 +138,9 @@
 
         h4 {
             margin-bottom: 0;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
 
         @include tablet-only{
@@ -164,12 +167,12 @@
 
         @include mobile-only{
             margin-right: 3rem;
-            margin-left: -2rem;
+            margin-left: -1.2rem;
             margin-top: 1em;
         }
 
         @include small-mobile{
-            margin-right: 6rem;
+            margin-right: 5rem;
             margin-left: -2rem;
             margin-top: 1em;
         }
@@ -177,8 +180,8 @@
 
     &:hover > .cards__description {
         @include mobile-only{
-            margin-right: 4rem!important;
-            width: 150px!important;
+            width: 180px!important;
+            margin-right: 0.5rem;
         }
     }
 
