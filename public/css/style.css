@@ -282,12 +282,12 @@ h2, span, p {
 }
 @media screen and (max-width: 767px) {
   .cards__description {
-    width: 250px !important;
-    font-size: 1em;
+    width: 267px !important;
+    font-size: 0.97em;
   }
 }
 .cards__prix {
-  margin-right: 9rem;
+  margin-right: 9.5rem;
   margin-top: 1em;
   font-weight: bold;
 }
@@ -300,22 +300,22 @@ h2, span, p {
 }
 @media screen and (max-width: 767px) {
   .cards__prix {
-    margin-right: 3rem;
-    margin-left: -1.2rem;
-    margin-top: 1em;
+    margin-right: 2.6rem;
+    margin-left: -2.7rem;
+    margin-top: 1.2em;
   }
 }
 @media screen and (max-width: 350px) {
   .cards__prix {
-    margin-right: 5rem;
-    margin-left: -2rem;
+    margin-right: 4.2rem;
+    margin-left: -2.2rem;
     margin-top: 1em;
   }
 }
 @media screen and (max-width: 767px) {
   .cards:hover > .cards__description {
-    width: 180px !important;
-    margin-right: 0.5rem;
+    width: 210px !important;
+    margin-right: 1.5rem;
   }
 }
 .cards:hover > .cards__confirmation {
