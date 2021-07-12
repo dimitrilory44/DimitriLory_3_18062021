@@ -87,13 +87,20 @@
             flex-direction: column;
             margin-left: 20px;
             font-size: 0.8em;
-            margin-top: -10px;
+
+            h2 {
+                line-height: .5em;
+            }
+
+            span {
+                font-size: 1.3em;
+            }
             
             @include mobile-only{
                 margin-left: 10px;
 
-                h1 {
-                    line-height: .5em;
+                h2 {
+                    line-height: .2em;
                 }
 
             }
